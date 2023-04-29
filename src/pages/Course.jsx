@@ -2,7 +2,7 @@ import Section from "../components/Section/Section";
 import SingleCourse from "../components/SingleCourse/SingleCourse";
 import lectureImg1 from "../assets/images/lecture-1.jpg";
 
-const Coursee = () => {
+const Course = () => {
     return (
       <>
       <Section title="HTML & CSS">
@@ -16,4 +16,4 @@ const Coursee = () => {
     )
   }
   
-  export default Coursee;
+  export default Course;
