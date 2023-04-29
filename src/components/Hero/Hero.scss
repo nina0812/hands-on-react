@@ -17,7 +17,6 @@
 &-Overlay {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
@@ -26,9 +25,17 @@
 &-Content {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    padding: 0 24px;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 32px;
+        }
+    
+    @media screen and (min-width: 768px) {
+         padding: 0;
+         }
 }
 
 &-ContentInner {
@@ -45,11 +52,19 @@
 &-Title {
     color: $colorSecondary;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 130%;
     letter-spacing: 1px;
     max-width: 450px;
     margin-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+            font-size: 36px;
+        } 
+
+    @media screen and (min-width: 1024px) {
+            font-size: 38px;
+    } 
 }
 
 &-Subtitle {

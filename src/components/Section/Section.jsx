@@ -10,8 +10,8 @@ const Section = ({title, subtitle, children}) => {
           <p className="Section-Subtitle">
             {subtitle}
           </p>
-        </div>
         {children}
+        </div>
     </section>
   );
 }
