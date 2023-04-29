@@ -21,7 +21,7 @@ const Hero = () => {
                 Make a turnaround in your career or upgrade your current skill
                 set with knowledge-based lessons from IT practice.
               </p>
-             <Button>
+             <Button name="Button Button_secondary">
                 Explore courses
              </Button>
             </div>

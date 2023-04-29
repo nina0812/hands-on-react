@@ -42,8 +42,8 @@ const Header = () => {
             <NavLink to="/courses" className="Header-Link">
               Courses
             </NavLink>
-            <Button>
-            <NavLink to="/register" className="button">
+            <Button name="Button">
+            <NavLink to="/register">
               Register
             </NavLink>
              </Button>
