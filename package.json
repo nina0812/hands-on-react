@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.10.0",
-    "sass": "^1.62.0"
+    "react-spinners": "^0.13.8",
+    "sass": "^1.62.0",
+    "styled-components": "^5.3.10",
+    "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

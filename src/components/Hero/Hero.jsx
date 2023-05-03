@@ -1,34 +1,42 @@
-import "./Hero.scss";
-import heroImg from "../../assets/images/landing.jpg"
-import Button from "../Button/Button";
+import heroImg from "../../assets/images/landing.jpg";
+import { Button } from "../../utils/styles/generalStyles";
+import { useNavigate } from "react-router-dom";
+import {
+  Hero as HeroWrapper,
+  Figure,
+  Img,
+  Overlay,
+  Content,
+  ContentInner,
+  TextCard,
+  Title,
+  Subtitle,
+} from "./HeroStyle";
 
 const Hero = () => {
-    return (
-        <section className="Hero">
-        <figure className="Hero-Figure">
-          <img
-            src={heroImg}
-            alt="Speck Academy hero"
-            className="Hero-Img"
-          />
-        </figure>
-        <div className="Hero-Overlay"></div>
-        <div className="Hero-Content">
-          <div className="Hero-ContentInner">
-            <div className="Hero-TextCard">
-              <h1 className="Hero-Title">Speck Academy 2023 powered by FOI</h1>
-              <p className="Hero-Subtitle">
-                Make a turnaround in your career or upgrade your current skill
-                set with knowledge-based lessons from IT practice.
-              </p>
-             <Button name="Button Button_secondary">
-                Explore courses
-             </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-}
+  const navigate = useNavigate();
+  return (
+    <HeroWrapper>
+      <Figure>
+        <Img src={heroImg} alt="Speck Academy hero" />
+      </Figure>
+      <Overlay />
+      <Content>
+        <ContentInner>
+          <TextCard>
+            <Title>Speck Academy 2023 powered by FOI</Title>
+            <Subtitle>
+              Make a turnaround in your career or upgrade your current skill set
+              with knowledge-based lessons from IT practice.
+            </Subtitle>
+            <Button onClick={() => navigate("/courses")}>
+              Explore courses
+            </Button>
+          </TextCard>
+        </ContentInner>
+      </Content>
+    </HeroWrapper>
+  );
+};
 
 export default Hero;

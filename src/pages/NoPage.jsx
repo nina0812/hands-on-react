@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const NoPage = () => {
   return (
@@ -6,6 +6,6 @@ const NoPage = () => {
       <h1>Page not found</h1>
     </div>
   );
-}
+};
 
 export default NoPage;

@@ -17,13 +17,13 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/course" element={<Coursee />} />
+          <Route path="/courses/:id" element={<Coursee />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
