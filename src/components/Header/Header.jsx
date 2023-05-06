@@ -32,7 +32,10 @@ const Header = () => {
           <HeaderNav>
             <HeaderLink to="/home">Home</HeaderLink>
             <HeaderLink to="/courses">Courses</HeaderLink>
+            <HeaderLink to="/profile">Profile</HeaderLink>
+            <Button onClick={() => navigate("/sign-in")} isOutline>Sign in</Button>
             <Button onClick={() => navigate("/register")}>Register</Button>
+      
           </HeaderNav>
         </HeaderInner>
       </HeaderWrapper>

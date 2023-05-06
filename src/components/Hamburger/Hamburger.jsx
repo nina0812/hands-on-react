@@ -17,6 +17,12 @@ function Hamburger({ closeMenu }) {
         <HeaderLink to="/courses" onClick={closeMenu}>
           Courses
         </HeaderLink>
+        <HeaderLink to="/profile" onClick={closeMenu}>
+          Profile
+        </HeaderLink>
+        <HeaderLink to="/sign-in" onClick={closeMenu}>
+          Sign in
+        </HeaderLink>
         <HeaderLink to="/register" onClick={closeMenu}>
           Register
         </HeaderLink>
