@@ -4,9 +4,11 @@ import { breakpoints, colors } from "../../utils/styles/theme";
 export const Section = styled.section`
   background-color: ${colors.bgPrimary};
 
-  &_secondary {
-    background-color: ${colors.bgSecondary};
-  }
+  ${(props) =>
+        props.isSecondary &&`
+            background-color: ${colors.bgSecondary};
+        `
+    }
 `;
 
 export const Inner = styled.div`
@@ -29,8 +31,6 @@ export const Inner = styled.div`
 
 export const Title = styled.h2`
   max-width: 550px;
-  margin: 0 auto;
-  text-align: center;
   margin-bottom: 32px;
   font-size: 28px;
 
@@ -41,6 +41,13 @@ export const Title = styled.h2`
   @media screen and (${breakpoints.desktop}) {
     font-size: 36px;
   }
+
+  ${(props) =>
+    props.isCentered && `
+    margin: 0 auto;
+    margin-bottom: 32px;
+    text-align: center;
+  `}
 `;
 
 export const Subtitle = styled.p`
@@ -50,4 +57,15 @@ export const Subtitle = styled.p`
   color: ${colors.textSecondary};
   font-size: 16px;
   margin-bottom: 48px;
+`;
+
+export const SectionHeading = styled.div`
+    margin-bottom: 64px;
+
+    @media(${breakpoints.tablet}) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
 `;

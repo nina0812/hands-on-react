@@ -14,7 +14,7 @@ import {
 
 const Register = () => {
   return (
-    <Section title="Register">
+    <Section title="Register" isCentered="true">
       <Formik
         initialValues={{
           firstName: "",
@@ -68,7 +68,7 @@ const Register = () => {
         }}
       >
         {(formik) => (
-          <Form>
+          <Form isCentered="true">
             <FormRow>
               <Field
                 type="text"

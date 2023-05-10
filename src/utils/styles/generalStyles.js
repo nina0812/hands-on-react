@@ -14,7 +14,7 @@ export const Button = styled.button`
   transition: background-color 0.3s ease-out;
   outline: none;
   border: none;
-  margin-right: 25px;
+  margin-right: 32px;
 
   ${(props) =>
     props.isSecondary &&
@@ -61,7 +61,13 @@ export const Grid = styled.div`
 export const Form = styled(FormFormik)`
   @media screen and (${breakpoints.tabletSmall}) {
     max-width: 400px;
-    margin: 0 auto; //horizontalno poravnavanje
+
+
+
+    ${props => props.isCentered && `
+            margin: 0 auto;
+        `}
+      
   }
 `;
 
@@ -109,3 +115,46 @@ export const ErrorMessage = styled(ErrorMessageFormik)`
   color: ${colors.primary};
   padding-top: 8px;
 `;
+
+export const Label=styled.p`
+margin-bottom: 8px;
+`;
+
+export const Password=styled.div`
+background-color: ${colors.bgSecondary};
+height: 400px;
+width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+border-radius: 10px;
+padding: 30px 20px;
+margin-top: 20px;
+
+
+${props => props.isOnlyText && `
+            height: 150px;
+            width: 400px;
+        `}
+
+${props => props.isRight&& `
+  position: relative;
+  top: -700px;
+  left: 550px;
+
+        `}
+        ${props => props.isRightt && `
+  position: relative;
+  top: -480px;
+  left: 500px; `}
+`;
+
+
+export const SectionWrapper=styled.div`
+  display:flex;
+  justify-content: space-between;
+`;
+
+export const Title=styled.h3`
+margin-bottom: 10px;
+`

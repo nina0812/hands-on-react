@@ -12,7 +12,7 @@ import {
 
 const SignIn = () => {
   return (
-    <Section title="Sign in">
+    <Section title="Sign in" isCentered="true">
       <Formik
         initialValues={{
           email: "",
@@ -42,7 +42,7 @@ const SignIn = () => {
         }}
       >
         {(formik) => (
-          <Form>
+          <Form isCentered="true">
             <FormRow>
               <Field
                 type="email"

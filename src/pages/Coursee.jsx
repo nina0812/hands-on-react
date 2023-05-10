@@ -30,7 +30,7 @@ const Coursee = () => {
       {isLoading ? (
         <Loader />
       ) : course ? (
-        <Section title={course.title}>
+        <Section title={course.title} isCentered="true">
           <SingleCourse
             imgSrc={course.imgSrc}
             imgAlt={course.imgAlt}

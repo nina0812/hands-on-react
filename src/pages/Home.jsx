@@ -22,6 +22,7 @@ const Home = () => {
     <>
       <Hero />
       <Section
+        isCentered="true"
         title="Open your new possibilities"
         subtitle="We recommend that you choose one of the featured courses. If you don't find anything for you here, search for courses in detail on the courses page."
       >
